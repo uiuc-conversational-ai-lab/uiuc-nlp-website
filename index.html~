@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+<head>
+</head>
+
+<body>
+
+<hr>
+
+<table>
+<tr>
+<td>
+<img width=100 src="graphics/plain-logo.png"> 
+</td>
+
+<td>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+
+<td>
+<center>
+<h1>Zea Mays Center for Computational Linguistics
+<br>
+at the University of Illinois
+</h1>
+</center>
+</td>
+
+<td>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</td>
+
+
+<td>
+<img width=250 src="small-lincoln.jpg">
+</td>
+</tr>
+</table>
+
+<hr>
+
+<h2>Events</h2>
+
+<p>
+<a href="http://nlp.cs.rpi.edu/readinggroup/"> NLP reading group</a>
+
+<p>
+<a href="http://uiucblender.web.illinois.edu/seminars/"> NLP seminars</a>
+
+<p>
+The nlp-seminars mailing list is hosted on <a href="http://lists.illinois.edu">
+http://lists.illinois.edu </a>.   Please feel free to add yourself.
+
+<p>
+Also see the individual seminar schedules for specific departments (e.g. CS, linguistics).
+
+<h2>Core Faculty</h2>
+
+
+<ul>
+<li> <a href="https://ischool.illinois.edu/people/catherine-blake">
+Catherine Blake</a> (School of Information Sciences)
+<li> <a href="http://jdiesnerlab.ischool.illinois.edu/"> Jana Diesner</a> (School of Information Sciences)
+<li> <a href="http://mfleck.cs.illinois.edu/"> Margaret Fleck</a>  (Computer Science)
+<li> <a href="https://linguistics.illinois.edu/directory/profile/girju"> Roxana Girju</a> (Linguistics)
+<li> <a href="http://hanj.cs.illinois.edu/"> Jiawei Han</a>  (Computer Science)
+<li> <a href="http://juliahmr.cs.illinois.edu/"> Julia Hockenmaier</a>  (Computer Science)
+<li> <a href="http://www.ifp.illinois.edu/~hasegawa/"> Mark Hasegawa-Johnson</a> (Electrical and Compute
+r Engineering)
+<li> <a href="http://nlp.cs.rpi.edu/hengji.html"> Heng Ji</a> (Computer Science)
+<li> <a href="https://ischool.illinois.edu/people/halil-kilicoglu">
+Halil Kilicoglu</a> (School of Information Sciences)
+<li> <a href="http://dowobeha.github.io/"> Lane Schwartz</a> (Linguistics)
+<li> <a href="http://faculty.las.illinois.edu/cls/"> Chilin Shih</a>  (East Asian Languages and Cultures)
+<li> Yan Tang (Linguistics, arriving Fall 2019)
+<li> <a href="http://czhai.cs.illinois.edu/"> Chengxiang Zhai</a> (Computer Science)
+
+</ul>
+
+<h2>Affiliated Faculty</h2>
+
+<ul>
+<li> <a href="https://psychology.illinois.edu/directory/profile/clfishe"> Cynthia Fisher</a> (Psychology)
+<li> <a href="https://paris.cs.illinois.edu/"> Paris Smaragdis</a> (Computer Science)
+</ul>
+
+<h2>Affiliated Groups</h2>
+
+<ul>
+<li> <a href="https://machinelearning.illinois.edu/"> The Machine Learning Group</a>
+</ul>
+
+</body>
+</html>
+
