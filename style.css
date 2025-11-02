@@ -494,13 +494,12 @@ img {
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	gap: 12px;
-	padding: 20px 15px;
+	padding: 18px 15px;
 	background: #f8f9fa;
 	border-radius: 8px;
 	border-top: 3px solid #E84A27;
 	transition: all 0.3s ease;
-	min-height: 120px;
+	min-height: 70px;
 	justify-content: center;
 }
 
@@ -509,17 +508,6 @@ img {
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 	transform: translateY(-3px);
 	border-top-color: #13294B;
-}
-
-.group-item i {
-	color: #E84A27;
-	flex-shrink: 0;
-	transition: transform 0.3s ease;
-}
-
-.group-item:hover i {
-	transform: scale(1.1);
-	color: #13294B;
 }
 
 .group-content h3 {
@@ -789,8 +777,8 @@ img {
 	}
 	
 	.group-item {
-		padding: 18px 12px;
-		min-height: 110px;
+		padding: 15px 12px;
+		min-height: 60px;
 	}
 }
 
@@ -825,7 +813,7 @@ img {
 	
 	.group-item {
 		padding: 15px;
-		min-height: 100px;
+		min-height: 60px;
 	}
 	
 	.group-content h3 {
