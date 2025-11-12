@@ -137,14 +137,27 @@
 			box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 		}
 
-		.organizer-card img {
+		.organizer-photo {
 			width: 72px;
 			height: 72px;
 			border-radius: 50%;
-			object-fit: cover;
+			overflow: hidden;
 			margin: 0 auto 12px auto;
-			display: block;
 			border: 3px solid rgba(232, 74, 39, 0.4);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.organizer-photo img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.organizer-photo.photo-zoom img {
+			transform: scale(1.25);
+			transform-origin: center;
 		}
 
 		.organizer-card .name {
@@ -281,37 +294,51 @@
 								<h2>Organizing Team</h2>
 								<div class="organizer-grid">
 									<div class="organizer-card">
-										<img src="graphics/dilek.jpeg" alt="Dilek Hakkani-Tür">
+										<div class="organizer-photo">
+											<img src="graphics/dilek.jpeg" alt="Dilek Hakkani-Tür">
+										</div>
 										<div class="name">Dilek Hakkani-Tür</div>
 										<div class="role">General Chair</div>
 									</div>
 									<div class="organizer-card">
-										<img src="graphics/gokhan.jpeg" alt="Gokhan Tur">
+										<div class="organizer-photo">
+											<img src="graphics/gokhan.jpeg" alt="Gokhan Tur">
+										</div>
 										<div class="name">Gokhan Tur</div>
 										<div class="role">Program Co-chair</div>
 									</div>
 									<div class="organizer-card">
-										<img src="graphics/heng.jpeg" alt="Heng Ji">
+										<div class="organizer-photo">
+											<img src="graphics/heng.jpeg" alt="Heng Ji">
+										</div>
 										<div class="name">Heng Ji</div>
 										<div class="role">Program Co-chair</div>
 									</div>
 									<div class="organizer-card">
-										<img src="graphics/minje.jpeg" alt="Minje Kim">
+										<div class="organizer-photo">
+											<img src="graphics/minje.jpeg" alt="Minje Kim">
+										</div>
 										<div class="name">Minje Kim</div>
 										<div class="role">Local Arrangements</div>
 									</div>
 									<div class="organizer-card">
-										<img src="graphics/hpeng.jpeg" alt="Hao Peng">
+										<div class="organizer-photo">
+											<img src="graphics/hpeng.jpeg" alt="Hao Peng">
+										</div>
 										<div class="name">Hao Peng</div>
 										<div class="role">Industry Liaison</div>
 									</div>
 									<div class="organizer-card">
-										<img src="graphics/vardhan.JPG" alt="Vardhan Dongre">
+										<div class="organizer-photo photo-zoom">
+											<img src="graphics/vardhan.JPG" alt="Vardhan Dongre">
+										</div>
 										<div class="name">Vardhan Dongre</div>
 										<div class="role">Student Organizer</div>
 									</div>
 									<div class="organizer-card">
-										<img src="graphics/ishika.png" alt="Ishika Agarwal">
+										<div class="organizer-photo">
+											<img src="graphics/ishika.png" alt="Ishika Agarwal">
+										</div>
 										<div class="name">Ishika Agarwal</div>
 										<div class="role">Student Organizer</div>
 									</div>
