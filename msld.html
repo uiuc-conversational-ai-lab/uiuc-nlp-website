@@ -169,6 +169,57 @@
 			font-size: 0.85rem;
 			color: #777;
 		}
+		.faq-section details {
+			background: #f8f9fa;
+			border-radius: 8px;
+			margin-bottom: 10px;
+			border-left: 4px solid #E84A27;
+			overflow: hidden;
+		}
+
+		.faq-section details summary {
+			padding: 14px 20px;
+			cursor: pointer;
+			font-size: 1rem;
+			color: #13294B;
+			font-weight: 600;
+			list-style: none;
+			display: flex;
+			align-items: center;
+			gap: 10px;
+		}
+
+		.faq-section details summary::-webkit-details-marker {
+			display: none;
+		}
+
+		.faq-section details summary::before {
+			content: "+";
+			font-size: 1.2rem;
+			font-weight: 700;
+			color: #E84A27;
+			flex-shrink: 0;
+		}
+
+		.faq-section details[open] summary::before {
+			content: "\2212";
+		}
+
+		.faq-section details .faq-answer {
+			padding: 0 20px 16px 20px;
+			color: #555;
+			line-height: 1.7;
+		}
+
+		.faq-section details .faq-answer p {
+			margin: 0;
+		}
+
+		.faq-section h3 {
+			margin-top: 28px;
+			margin-bottom: 14px;
+			color: #13294B;
+		}
 
 		@media screen and (max-width: 768px) {
 			.event-hero {
@@ -621,6 +672,198 @@
 								</div>
 							</section>
 
+							<section class="content-section faq-section">
+								<h2>Frequently Asked Questions</h2>
+
+								<h3>General</h3>
+
+								<details>
+									<summary>What is MSLD?</summary>
+									<div class="faq-answer">
+										<p><a href="https://midwest-sld.org/">Midwest Speech and Language Days (MSLD)</a> is a two-day, non-archival gathering that brings together researchers in speech, language, dialogue, and AI. It continues the tradition of Illinois Speech Day and the Midwest Computational Linguistics Colloquium. Think of it as an informal networking event rather than a formal conference.</p>
+									</div>
+								</details>
+
+								<details>
+									<summary>When and where is MSLD 2026?</summary>
+									<div class="faq-answer">
+										<p>April 15&ndash;16, 2026, at the Thomas Siebel Center for Computing and Data Science, University of Illinois Urbana-Champaign.</p>
+									</div>
+								</details>
+
+								<details>
+									<summary>Who can attend?</summary>
+									<div class="faq-answer">
+										<p>Everyone is welcome! MSLD especially encourages participation from students and early-career researchers across the Midwest, but attendees from any institution or region are welcome.</p>
+									</div>
+								</details>
+
+								<details>
+									<summary>Is there a registration fee?</summary>
+									<div class="faq-answer">
+										<p>No, registration is completely free for everyone. Meals during the event are also provided at no cost.</p>
+									</div>
+								</details>
+
+								<details>
+									<summary>Is there a registration deadline?</summary>
+									<div class="faq-answer">
+										<p>No, there is no registration deadline. However, space may be limited, so we encourage you to register early to secure your spot. The deadline for abstract submissions is March 2, 2026.</p>
+									</div>
+								</details>
+
+								<details>
+									<summary>Can I attend only one of the two days?</summary>
+									<div class="faq-answer">
+										<p>Yes.</p>
+									</div>
+								</details>
+
+								<details>
+									<summary>Is there a virtual or remote attendance option?</summary>
+									<div class="faq-answer">
+										<p>No, MSLD is an in-person-only event.</p>
+									</div>
+								</details>
+
+								<details>
+									<summary>Will talks be recorded?</summary>
+									<div class="faq-answer">
+										<p>No.</p>
+									</div>
+								</details>
+
+								<h3>Submissions</h3>
+
+								<details>
+									<summary>What is the submission format?</summary>
+									<div class="faq-answer">
+										<p>Abstracts should be one page plus references, describing published work, ongoing projects, or new ideas related to speech, language, and agentic AI. Submit via <a href="https://openreview.net/group?id=MSLD/2026/Meeting">OpenReview</a>.</p>
+									</div>
+								</details>
+
+								<details>
+									<summary>Can I submit work that has already been accepted or published at another venue?</summary>
+									<div class="faq-answer">
+										<p>Yes! MSLD is non-archival, so you are welcome to present work that has been accepted or published elsewhere.</p>
+									</div>
+								</details>
+
+								<details>
+									<summary>Can I submit work that was rejected from another venue?</summary>
+									<div class="faq-answer">
+										<p>Absolutely. We welcome submissions at all stages, including work-in-progress and papers you are currently refining for future submission.</p>
+									</div>
+								</details>
+
+								<details>
+									<summary>Will my submission be published in proceedings?</summary>
+									<div class="faq-answer">
+										<p>No. MSLD is non-archival and does not publish formal proceedings. PDFs of accepted abstracts may be posted on the workshop website with author permission.</p>
+									</div>
+								</details>
+
+								<details>
+									<summary>Can I submit more than one abstract?</summary>
+									<div class="faq-answer">
+										<p>Yes.</p>
+									</div>
+								</details>
+
+								<details>
+									<summary>Do I need to be from a Midwest institution to submit?</summary>
+									<div class="faq-answer">
+										<p>No, submissions from any institution are welcome.</p>
+									</div>
+								</details>
+
+								<details>
+									<summary>What are the important dates?</summary>
+									<div class="faq-answer">
+										<p>Submission deadline: March 2, 2026. Notification of acceptance: March 9, 2026. Conference dates: April 15&ndash;16, 2026.</p>
+									</div>
+								</details>
+
+								<h3>Presenting</h3>
+
+								<details>
+									<summary>What is the presentation format?</summary>
+									<div class="faq-answer">
+										<p>Accepted abstracts will be presented as posters. A subset will be selected for short oral presentations. The program also includes keynotes, panels, and informal networking sessions.</p>
+									</div>
+								</details>
+
+								<h3>Travel &amp; Logistics</h3>
+
+								<details>
+									<summary>How do I get to Champaign-Urbana?</summary>
+									<div class="faq-answer">
+										<p>You can fly into Willard Airport (CMI) directly, or fly into one of the Chicago-area airports (O'Hare or Midway), which have shuttle and bus service to campus. Peoria Charter offers a bus service from O'Hare to campus.</p>
+									</div>
+								</details>
+
+								<details>
+									<summary>Is travel support available?</summary>
+									<div class="faq-answer">
+										<p>Limited travel support may be available, with priority given to student presenters. Some student accommodations may also be provided. Details will be announced on the website.</p>
+									</div>
+								</details>
+
+								<details>
+									<summary>Are there recommended hotels nearby?</summary>
+									<div class="faq-answer">
+										<p>Most people stay at TownePlace Suites or Hampton Inn.</p>
+									</div>
+								</details>
+
+								<details>
+									<summary>Will parking information be provided?</summary>
+									<div class="faq-answer">
+										<p>There is ample paid parking available near the venue.</p>
+									</div>
+								</details>
+
+								<h3>During the Event</h3>
+
+								<details>
+									<summary>Will meals or coffee be provided?</summary>
+									<div class="faq-answer">
+										<p>Yes, meals are provided free of charge for all attendees.</p>
+									</div>
+								</details>
+
+								<details>
+									<summary>Is there Wi-Fi access for campus visitors?</summary>
+									<div class="faq-answer">
+										<p>Yes, Illinois Guest Wi-Fi is free for everybody.</p>
+									</div>
+								</details>
+
+								<details>
+									<summary>Is the venue wheelchair accessible?</summary>
+									<div class="faq-answer">
+										<p>Yes, the Siebel Center is fully accessible.</p>
+									</div>
+								</details>
+
+								<details>
+									<summary>Will there be a social event or dinner?</summary>
+									<div class="faq-answer">
+										<p>No.</p>
+									</div>
+								</details>
+
+								<h3>Contact</h3>
+
+								<details>
+									<summary>How can I contact the organizers?</summary>
+									<div class="faq-answer">
+										<p>Submit your questions through our <a href="https://forms.gle/eUfQiPKJ9ugdqbfZ9">contact form</a>.</p>
+									</div>
+								</details>
+
+							</section>
+							
                             <!-- <section class="content-section secondary">
                                 <h2>Sponsorship</h2>
 
@@ -711,3 +954,4 @@
 <script src="script.js"></script>
 </body>
 </html>
+
