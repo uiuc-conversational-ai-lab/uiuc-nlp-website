@@ -11,8 +11,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="style.css" media="all" />
+  <!-- Styles (version query avoids cached CSS after deploy) -->
+  <link rel="stylesheet" href="style.css?v=20260316" media="all" />
+  <!-- Critical: header (works even if style.css fails to load on deploy) -->
+  <style>
+  .site-topbar{background:#13294B;color:rgba(255,255,255,.9);padding:8px 0;font-size:.85rem}
+  .site-header{background:#13294B!important;color:#fff!important;padding:20px 0}
+  .site-title a{color:#fff!important}.main-navigation{background:#fff!important;border-bottom:3px solid #FF5F05!important}
+  .menu-item a{color:#13294B!important;font-family:"Montserrat",Arial,sans-serif!important}
+  .logo-container{flex-shrink:0;max-width:120px;overflow:hidden}
+  .cs-logo{height:65px!important;width:auto!important;max-width:100%!important;display:block!important;object-fit:contain!important}
+  </style>
 </head>
 
 <body class="page">

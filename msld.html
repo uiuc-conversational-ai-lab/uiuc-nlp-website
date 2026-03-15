@@ -11,8 +11,28 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-	<!-- Styles -->
-	<link rel="stylesheet" href="style.css" media="all" />
+	<!-- Styles (version query avoids cached CSS after deploy) -->
+	<link rel="stylesheet" href="style.css?v=20260316" media="all" />
+
+	<!-- Critical: header + image containment (works even if style.css fails to load on deploy) -->
+	<style>
+	.site-topbar{background:#13294B;color:rgba(255,255,255,.9);padding:8px 0;font-size:.85rem;border-bottom:1px solid rgba(255,255,255,.1)}
+	.site-topbar a{color:rgba(255,255,255,.95)!important}.site-topbar a:hover{color:#FF5F05!important}
+	.site-header{background:#13294B!important;color:#fff!important;padding:20px 0}
+	.site-title a{color:#fff!important}.site-title a:hover{color:#FF5F05!important}
+	.site-description{color:rgba(255,255,255,.85)!important}
+	.main-navigation{background:#fff!important;border-bottom:3px solid #FF5F05!important}
+	.menu-item a{color:#13294B!important;font-family:"Montserrat",Arial,sans-serif!important}
+	.logo-container{flex-shrink:0;max-width:120px;overflow:hidden}
+	.cs-logo{height:65px!important;width:auto!important;max-width:100%!important;display:block!important;object-fit:contain!important}
+	.invited-talk-photo{flex-shrink:0;width:120px;height:120px;min-width:120px;min-height:120px;max-width:120px;max-height:120px;border-radius:8px;overflow:hidden}
+	.invited-talk-photo img{width:100%;height:100%;object-fit:cover;display:block}
+	.organizer-photo{width:72px;height:72px;min-width:72px;min-height:72px;max-width:72px;max-height:72px;border-radius:50%;overflow:hidden;margin:0 auto 12px auto}
+	.organizer-photo img{width:100%;height:100%;object-fit:cover;display:block}
+	.event-card h3,.schedule-card h3,.schedule-time,.highlight-box{color:#13294B}
+	.faq-section details{border-left:4px solid #FF5F05}.faq-section details summary{color:#13294B}
+	.organizer-card .name{color:#13294B}
+	</style>
 
 	<style>
 		.event-hero {
@@ -164,7 +184,7 @@
 
 		.organizer-card .name {
 			font-weight: 600;
-			color: var(--illini-blue);
+			color: #13294B;
 		}
 
 		.organizer-card .role {
@@ -175,7 +195,7 @@
 			background: #f8f9fa;
 			border-radius: 8px;
 			margin-bottom: 10px;
-			border-left: 4px solid var(--illini-orange);
+			border-left: 4px solid #FF5F05;
 			overflow: hidden;
 		}
 
@@ -183,7 +203,7 @@
 			padding: 14px 20px;
 			cursor: pointer;
 			font-size: 1rem;
-			color: var(--illini-blue);
+			color: #13294B;
 			font-weight: 600;
 			list-style: none;
 			display: flex;
@@ -199,7 +219,7 @@
 			content: "+";
 			font-size: 1.2rem;
 			font-weight: 700;
-			color: var(--illini-orange);
+			color: #FF5F05;
 			flex-shrink: 0;
 		}
 
@@ -220,7 +240,7 @@
 		.faq-section h3 {
 			margin-top: 28px;
 			margin-bottom: 14px;
-			color: var(--illini-blue);
+			color: #13294B;
 		}
 
 		@media screen and (max-width: 768px) {
