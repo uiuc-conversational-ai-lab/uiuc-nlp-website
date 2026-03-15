@@ -1,0 +1,174 @@
+ILLINOIS WEBSITE HEADER & FOOTER BRAND COMPLIANCE SPEC Reference Site:
+https://siebelschool.dev.engr.illinois.edu/natural-language-processing
+
+Purpose: This document lists the structural, visual, and CSS-related
+details needed to replicate the Illinois brand-compliant header and
+footer used on the reference website. It is designed so that a code
+agent or developer can update an existing website to match the official
+Illinois design system.
+
+  ---------------------
+  1. HEADER STRUCTURE
+  ---------------------
+
+Top Utility Bar - Contains the Block I logo and Illinois link. - Dark
+blue background. - White text. - Small uppercase typography.
+
+Typical layout:
+
+    <a class="illinois-logo">Illinois</a>
+
+    <div class="site-title">
+      Natural Language Processing
+    </div>
+
+    <nav class="main-nav">
+      Home
+      People
+      Research
+      Publications
+      Courses
+    </nav>
+
+  -------------------------
+  2. HEADER DESIGN TOKENS
+  -------------------------
+
+Primary Colors
+
+Illini Blue: #13294B
+
+Illini Orange: #E84A27
+
+White: #FFFFFF
+
+Neutral Gray: #F5F5F5
+
+Example CSS
+
+.illinois-topbar { background-color: #13294B; color: #FFFFFF; height:
+44px; }
+
+.site-header { background-color: white; border-bottom: 1px solid
+#E6E6E6; }
+
+  ---------------
+  3. TYPOGRAPHY
+  ---------------
+
+Illinois web typography generally uses:
+
+Primary Sans Serif: “Source Sans Pro”, Arial, sans-serif
+
+Header Weight: 600
+
+Body Weight: 400
+
+Example CSS
+
+body { font-family: “Source Sans Pro”, Arial, sans-serif; }
+
+.site-title { font-size: 22px; font-weight: 600; }
+
+  ---------------------
+  4. NAVIGATION STYLE
+  ---------------------
+
+Navigation items are typically:
+
+-   uppercase or small caps
+-   medium weight
+-   blue text
+-   orange highlight on hover
+
+Example CSS
+
+.main-nav a { color: #13294B; font-weight: 600; padding: 16px; }
+
+.main-nav a:hover { color: #E84A27; }
+
+  ---------------------
+  5. FOOTER STRUCTURE
+  ---------------------
+
+The Illinois footer typically includes:
+
+1.  Illinois wordmark
+2.  Link columns
+3.  contact / address
+4.  copyright text
+
+Example layout:
+
+    About
+    Contact
+    Accessibility
+
+    © University of Illinois
+
+  -------------------------
+  6. FOOTER DESIGN TOKENS
+  -------------------------
+
+.footer { background-color: #13294B; color: #FFFFFF; padding: 40px; }
+
+.footer a { color: #FFFFFF; }
+
+.footer a:hover { color: #E84A27; }
+
+  ------------------------
+  7. RESPONSIVE BEHAVIOR
+  ------------------------
+
+Mobile breakpoint typically around:
+
+768px
+
+Behavior:
+
+-   navigation collapses into hamburger menu
+-   header height increases slightly
+-   menu items stack vertically
+
+Example:
+
+@media (max-width: 768px) {
+
+.main-nav { display: none; }
+
+.mobile-menu { display: block; }
+
+}
+
+  ---------------------------------
+  8. DEVTOOLS EXTRACTION WORKFLOW
+  ---------------------------------
+
+To extract exact CSS from the reference site:
+
+1.  Open Chrome DevTools.
+2.  Inspect the header.
+3.  Identify the outer container classes.
+4.  Record computed values for:
+    -   background color
+    -   font
+    -   spacing
+    -   borders
+5.  Repeat for footer.
+6.  Export selectors and CSS rules.
+
+  -----------------------------
+  9. IMPLEMENTATION CHECKLIST
+  -----------------------------
+
+Required checks:
+
+[ ] Illini Blue used for header/footer backgrounds [ ] Illini Orange
+used for hover highlights [ ] Source Sans Pro used for typography [ ]
+Header structure follows Illinois layout [ ] Footer includes Illinois
+attribution [ ] Navigation spacing matches reference [ ] Responsive
+behavior implemented
+
+------------------------------------------------------------------------
+
+END OF SPEC

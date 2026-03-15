@@ -6,7 +6,9 @@
 	<title>MSLD 2026 @ UIUC</title>
 
 	<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Dosis:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<!-- Fonts (Illinois brand: Montserrat headings, Source Sans Pro body) -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
 	<!-- Styles -->
@@ -46,14 +48,14 @@
 			background: #f8f9fa;
 			border-radius: 10px;
 			padding: 22px;
-			border-left: 4px solid #E84A27;
+			border-left: 4px solid var(--illini-orange);
 			box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 		}
 
 		.event-card h3 {
 			margin: 0 0 12px 0;
 			font-size: 1.2rem;
-			color: #13294B;
+			color: var(--illini-blue);
 		}
 
 		.event-card p {
@@ -79,7 +81,7 @@
 		.schedule-card h3 {
 			margin-top: 0;
 			margin-bottom: 16px;
-			color: #13294B;
+			color: var(--illini-blue);
 		}
 
 		.schedule-card ul {
@@ -101,17 +103,17 @@
 
 		.schedule-time {
 			font-weight: 700;
-			color: #13294B;
+			color: var(--illini-blue);
 			margin-right: 10px;
 		}
 
 		.highlight-box {
 			background: #e8f4f8;
-			border-left: 4px solid #13294B;
+			border-left: 4px solid var(--illini-blue);
 			padding: 20px;
 			border-radius: 10px;
 			margin: 30px 0;
-			color: #13294B;
+			color: var(--illini-blue);
 		}
 
 		.event-list {
@@ -143,7 +145,7 @@
 			border-radius: 50%;
 			overflow: hidden;
 			margin: 0 auto 12px auto;
-			border: 3px solid rgba(232, 74, 39, 0.4);
+			border: 3px solid rgba(255, 95, 5, 0.4);
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -162,7 +164,7 @@
 
 		.organizer-card .name {
 			font-weight: 600;
-			color: #13294B;
+			color: var(--illini-blue);
 		}
 
 		.organizer-card .role {
@@ -173,7 +175,7 @@
 			background: #f8f9fa;
 			border-radius: 8px;
 			margin-bottom: 10px;
-			border-left: 4px solid #E84A27;
+			border-left: 4px solid var(--illini-orange);
 			overflow: hidden;
 		}
 
@@ -181,7 +183,7 @@
 			padding: 14px 20px;
 			cursor: pointer;
 			font-size: 1rem;
-			color: #13294B;
+			color: var(--illini-blue);
 			font-weight: 600;
 			list-style: none;
 			display: flex;
@@ -197,7 +199,7 @@
 			content: "+";
 			font-size: 1.2rem;
 			font-weight: 700;
-			color: #E84A27;
+			color: var(--illini-orange);
 			flex-shrink: 0;
 		}
 
@@ -218,7 +220,7 @@
 		.faq-section h3 {
 			margin-top: 28px;
 			margin-bottom: 14px;
-			color: #13294B;
+			color: var(--illini-blue);
 		}
 
 		@media screen and (max-width: 768px) {
@@ -240,6 +242,14 @@
 <body class="page">
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	<div class="site-topbar" role="banner">
+		<div class="inner-container">
+			<span class="topbar-school">The Grainger College of Engineering</span>
+			<span class="topbar-divider">|</span>
+			<a href="https://siebelschool.illinois.edu/">Siebel School of Computing and Data Science</a>
+		</div>
+	</div>
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="inner-container">
@@ -349,6 +359,10 @@
                                 <div class="invited-talks">
 
                                     <div class="invited-talk">
+                                        <div class="invited-talk-photo">
+                                            <img src="graphics/juliah_msld.jpg" alt="Julia Hirschberg">
+                                        </div>
+                                        <div class="invited-talk-body">
                                         <h3>Julia Hirschberg</h3>
                                         <div class="invited-affiliation">Columbia Unversity</div>
 
@@ -369,9 +383,14 @@
                                                 Julia Hirschberg is a Columbia CS Percy K. and Vida L.W. Hudson Professor and was previously at Bell Laboratories/AT&TLabs working on TTS. She currently studies spoken language: code-switching; conversational entrainment, emotion and empathy; identified risk for hospitalization in healthcare and producing safe dialogue agents for medical care; and identifying dialogue acts. She served on the ACL, CRA, IEEE SLTC, NAACL, ISCA (president 2005-7) Executive Boards, and AAAI Council, was editor of Computational Linguistics and Speech Communication, and is an AAAI, ISCA, ACL, ACM, and IEEE fellow and a member of the National Academy of Engineering, the American Academy of Arts and Sciences, and the American Philosophical Society member, and received the IEEE Flanagan Award and the ISCA Medal for Scientific Achievement. She received the National Academy of Artificial Intelligence Artificial Intelligence Exploration Award and the ACL Distinguished Service Medal in 2025.She has 5 PhD students and many research project students in Columbia Computer Science.
                                             </div>
                                         </details>
+                                        </div>
                                     </div>
 
                                     <div class="invited-talk">
+                                        <div class="invited-talk-photo">
+                                            <img src="graphics/rada_msld.jpg" alt="Rada Mihalcea">
+                                        </div>
+                                        <div class="invited-talk-body">
                                         <h3>Rada Mihalcea</h3>
                                         <div class="invited-affiliation">University of Michigan, Ann Arbor</div>
 
@@ -392,9 +411,14 @@
                                                 Rada Mihalcea is the Janice M. Jenkins Professor of Computer Science and Engineering at the University of Michigan and the Director of the Michigan Artificial Intelligence Lab. Her research spans natural language processing, large language and language-vision models, and computational social science, with a focus on cross-cultural and cross-lingual models, fairness, interpretability, and responsible AI deployment. She leads multiple interdisciplinary initiatives at the intersection of AI, health, education, and social impact, and has developed widely adopted datasets and computational methods. She served as Program Co-Chair for EMNLP 2009 and ACL 2011, General Chair for NAACL 2015 and *SEM 2019, and co-founded the ACL Mentorship Program, the TextGraphs workshop series, and the NLP for Positive Impact workshop series. She is an ACM Fellow, AAAI Fellow, and ACL Fellow, and a former President of the ACL. She is a recipient of the Presidential Early Career Award for Scientists and Engineers awarded by President Obama.
                                             </div>
                                         </details>
+                                        </div>
                                     </div>
                                     
                                     <div class="invited-talk">
+                                        <div class="invited-talk-photo">
+                                            <img src="graphics/nanyu_msld.png" alt="Nanyun (Violet) Peng">
+                                        </div>
+                                        <div class="invited-talk-body">
                                         <h3>Nanyun (Violet) Peng</h3>
                                         <div class="invited-affiliation">University of California, Los Angeles</div>
 
@@ -415,9 +439,14 @@
                                                 Nanyun (Violet) Peng is an Associate Professor of Computer Science at the University of California, Los Angeles, currently on sabbatical, and a Senior Staff Research Scientist at Google. Her research focuses on controllable and creative language generation, multilingual and multimodal models, and the development of automatic evaluation metrics, with a strong commitment to advancing robust and trustworthy artificial intelligence (AI). Her work has been recognized with multiple paper awards, including an Outstanding Paper Award at NAACL 2022, three Outstanding Paper Awards at EMNLP 2024, Oral Papers at NeurIPS 2022 and ICML 2023, as well as several Best Paper Awards at workshops. Her research has received support from the NSF CAREER Award, NIH R01, DARPA, IARPA, and multiple industrial research awards. She served as Program Chair for ICLR 2025 and EMNLP 2025, and as a board member of NAACL.
                                             </div>
                                         </details>
+                                        </div>
                                     </div>
 
                                     <div class="invited-talk">
+                                        <div class="invited-talk-photo">
+                                            <img src="graphics/dan_msld.jpg" alt="Dan Roth">
+                                        </div>
+                                        <div class="invited-talk-body">
                                         <h3>Dan Roth</h3>
                                         <div class="invited-affiliation">University of Pennsylvania / Oracle</div>
 
@@ -438,9 +467,14 @@
                                                 Dan Roth is the Eduardo D. Glandt Distinguished Professor at the University of Pennsylvania and Chief AI Scientist at Oracle. Previously Dan was a VP/Distinguished Scientist at AWS AI where he led the scientific effort behind Amazon's first-generation GenAI products, including Titan Models, Amazon Q, and Amazon Bedrock.  Dan is a Fellow of the AAAS, ACM, AAAI, and ACL, and a recipient of the IJCAI John McCarthy Award “for major conceptual and theoretical advances in the modeling of natural language understanding, machine learning, and reasoning.” He has published broadly in natural language processing, machine learning, knowledge representation and reasoning, and learning theory, was the Editor-in-Chief of the Journal of Artificial Intelligence Research (JAIR) and has served as a Program Chair and Conference Chair for the major conferences in his research areas. Roth has been involved in several ML/NLP/GenAI startups in domains that range from legal and compliance to health care. Dan received his B.A Summa cum laude in Mathematics from the Technion, Israel and his Ph.D. in Computer Science from Harvard University in 1995.
                                             </div>
                                         </details>
+                                        </div>
                                     </div>
 
                                     <div class="invited-talk">
+                                        <div class="invited-talk-photo">
+                                            <img src="graphics/shinji_msld.png" alt="Shinji Watanabe">
+                                        </div>
+                                        <div class="invited-talk-body">
                                         <h3>Shinji Watanabe</h3>
                                         <div class="invited-affiliation">Carnegie Mellon University</div>
 
@@ -461,9 +495,14 @@
                                                 Shinji Watanabe is an Associate Professor at Carnegie Mellon University, Pittsburgh, PA. He received his B.S., M.S., and Ph.D. (Dr. Eng.) degrees from Waseda University, Tokyo, Japan. He was a research scientist at NTT Communication Science Laboratories, Kyoto, Japan, from 2001 to 2011, a visiting scholar at Georgia Institute of Technology, Atlanta, GA, in 2009, and a senior principal research scientist at Mitsubishi Electric Research Laboratories (MERL), Cambridge, MA USA from 2012 to 2017. Before Carnegie Mellon University, he was an associate research professor at Johns Hopkins University, Baltimore, MD, USA, from 2017 to 2020. His research interests include automatic speech recognition, speech enhancement, spoken language understanding, and machine learning for speech and language processing. He has published over 500 papers in peer-reviewed journals and conferences and received several awards, including the best paper award from ISCA Interspeech in 2024. He is a Senior Area Editor of the IEEE Transactions on Audio Speech and Language Processing. He was/has been a member of several technical committees, including the APSIPA Speech, Language, and Audio Technical Committee (SLA), IEEE Signal Processing Society Speech and Language Technical Committee (SLTC), and Machine Learning for Signal Processing Technical Committee (MLSP). He is an IEEE and ISCA Fellow.
                                             </div>
                                         </details>
+                                        </div>
                                     </div>
 
                                     <div class="invited-talk">
+                                        <div class="invited-talk-photo">
+                                            <img src="graphics/yizhe_msld.jpg" alt="Yizhe Zhang">
+                                        </div>
+                                        <div class="invited-talk-body">
                                         <h3>Yizhe Zhang</h3>
                                         <div class="invited-affiliation">Apple</div>
 
@@ -484,6 +523,7 @@
                                                 Dr. Yizhe Zhang is a Staff Research Scientist at Apple Machine Learning Research, focusing on natural language processing and machine learning. His recent work includes developing text diffusion model, LLM reasoning and code agent. Previously, he worked at Meta AI and Microsoft Research. He holds a Ph.D.  from Duke University. Dr. Zhang has served as an Area Chair for top ML and NLP conferences, including NeurIPS, ICML, ICLR, ACL and EMNLP. He is also an Action Editor for Transactions on Machine Learning Research and the ACL Rolling Review. His recent research interests lie in bidirectional text models, code generation, implicit reasoning and lookahead training for large language models.
                                             </div>
                                         </details>
+                                        </div>
                                     </div>
 
                                 </div>
@@ -540,16 +580,16 @@
 								<h3 class="organizer-subtitle">Student Organizers</h3>
 								<div class="organizer-grid">
 									<div class="organizer-card">
-										<div class="organizer-photo">
-											<img src="graphics/ishika.jpg" alt="Ishika Agarwal">
-										</div>
-										<div class="name">Ishika Agarwal</div>
-									</div>
-									<div class="organizer-card">
 										<div class="organizer-photo photo-zoom">
 											<img src="graphics/vardhan.JPG" alt="Vardhan Dongre">
 										</div>
 										<div class="name">Vardhan Dongre</div>
+									</div>
+									<div class="organizer-card">
+										<div class="organizer-photo">
+											<img src="graphics/ishika.jpg" alt="Ishika Agarwal">
+										</div>
+										<div class="name">Ishika Agarwal</div>
 									</div>
                                     <div class="organizer-card">
 										<div class="organizer-photo">
@@ -911,21 +951,54 @@
 	<footer id="footer" class="site-footer" role="contentinfo">
 		<div class="inner-container">
 			<div class="footer-content">
-				<div class="footer-branding">
-					<p class="footer-title">Natural Language Processing Group</p>
-					<p><a href="https://illinois.edu/">University of Illinois at Urbana-Champaign</a></p>
+				<div class="footer-branding-block">
+					<p>Siebel School of Computing and Data Science</p>
+					<p><a href="https://illinois.edu/">University of Illinois Urbana-Champaign</a></p>
+					<div class="footer-address">
+						Thomas M. Siebel Center for Computer Science<br>
+						201 N. Goodwin Avenue, MC-258<br>
+						Urbana, IL 61801<br>
+						Phone: 217-333-3426<br>
+						Email: <a href="mailto:admin@siebelschool.illinois.edu">admin@siebelschool.illinois.edu</a>
+					</div>
+					<div class="footer-social">
+						<a href="https://twitter.com/IllinoisCS" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+						<a href="https://www.instagram.com/illinoiscs/" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+						<a href="https://www.facebook.com/IllinoisCS" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+						<a href="https://www.linkedin.com/school/siebel-school-of-computing-and-data-science/" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+						<a href="https://www.youtube.com/c/IllinoisComputerScience" aria-label="YouTube"><i class="fa fa-youtube-play"></i></a>
+					</div>
 				</div>
-
-				<div class="footer-links">
+				<div class="footer-explore">
+					<h3 class="footer-section-title">Explore</h3>
 					<ul>
-						<li><a href="https://siebelschool.illinois.edu/">Siebel School of Computing and Data Science</a></li>
+						<li><a href="https://siebelschool.illinois.edu/about/people">Find People</a></li>
+						<li><a href="https://siebelschool.illinois.edu/about/office-locations">Office Locations</a></li>
 						<li><a href="index.html#events">Events</a></li>
+						<li><a href="https://illinois.edu/">University of Illinois</a></li>
+					</ul>
+				</div>
+				<div class="footer-connect">
+					<h3 class="footer-section-title">Connect</h3>
+					<ul>
+						<li><a href="mailto:grad@siebelschool.illinois.edu">Graduate Advising</a> — grad@siebelschool.illinois.edu</li>
+						<li><a href="mailto:nlp-faculty@lists.illinois.edu">NLP Group</a> — nlp-faculty@lists.illinois.edu</li>
 					</ul>
 				</div>
 			</div>
 
+			<div class="footer-policy">
+				<a href="https://illinois.edu/privacy">Privacy Policy</a>
+				<span>|</span>
+				<span>&copy; 2026 University of Illinois</span>
+				<span>|</span>
+				<a href="https://illinois.edu/accessibility">Accessibility</a>
+				<span>|</span>
+				<a href="https://illinois.edu/webmaster">Webmaster</a>
+			</div>
+
 			<div class="footer-bottom">
-				<p>&copy; 2025 University of Illinois. All rights reserved.</p>
+				<p>All rights reserved.</p>
 			</div>
 		</div>
 	</footer>
