@@ -837,6 +837,40 @@ img {
 	color: var(--il-orange);
 }
 
+.sponsors-section {
+	background: #f5f5f5;
+	padding: 40px 0;
+	text-align: center;
+}
+
+.sponsors-title {
+	font-family: "Montserrat", Arial, sans-serif;
+	font-size: 1.4rem;
+	color: #13294B;
+	margin-bottom: 24px;
+}
+
+.sponsors-logos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+}
+
+.sponsor-logo {
+	height: 60px;
+	width: auto;
+	max-width: 160px;
+	object-fit: contain;
+	filter: grayscale(20%);
+	transition: filter 0.2s;
+}
+
+.sponsor-logo:hover {
+	filter: grayscale(0%);
+}
+
 .footer-bottom {
 	text-align: center;
 	padding-top: 20px;
